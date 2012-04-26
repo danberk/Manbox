@@ -1,38 +1,14 @@
 <div class="navbar">
   <div id="navcontainer">
-<a href="index.php"><img style="logo" src="images/nightlist_logo.png"></a>
+<a href="index.php"><img style="logo" src="images/manbox_logo.png"></a>
 
 <?php
 
 	if (isset($_SESSION['email'])) {
-    	echo '<p class="navtext"><a href="mynightlist.php">My Nightlist</a> | ';
-    	echo '<a href="nightbuilder.php">Nightbuilder</a> | </p>'; ?>
-        
-        <!-- Account Dropdown -->
-		<div id="topnav" class="topnav" style="float:right"> 
-  
-		<a href="login" class="account"><span>Account</span></a> </div>
-        
-        	<fieldset id="account_menu">
-            <div class="accountuser">
-            <?php echo $_SESSION['first_name'] . ' ' . $_SESSION['last_name']; ?>
-            </div>
-            <ul>
-            <li>Account Settings</li>
-            <li>Privacy</li>
-            <li>Help</li>
-            <li><a href="logout.php">Log Out</a></li>
-            </ul>
-			</fieldset>	
-        
-		</div>
-        
-  	
-    <?php
+    	echo 'Account'; ?>
     }
   	
     else {
-    ?>
 	<!-- Sign In Dropdown -->
 	<div id="topnav" class="topnav" style="float:right"> 
   

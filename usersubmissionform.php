@@ -3,9 +3,9 @@
     <?php echo $message; ?>
     
     <table>
-    <tr><td rowspan="7" style="vertical-align:top" width="600"><p class="submitheader">Nightlist keeps track of restaurants and bars that your friends recommend to you.</p>
+    <tr><td rowspan="7" style="vertical-align:top" width="600"><p class="submitheader">Manbox keeps you clean and classy, on your schedule.</p>
     <br />
-    <p class="submitheader">It's a to-do list for your social life.</p>
+    <p class="submitheader">We worry about your hygeine so you don't have to.</p>
     <div class="mobilelogo"><img src="images/smartphone.png" /></div><p class="submitheader2"><a href="mobile.php">Download the mobile app</a> to Nightlist on the go.</p>
 
     <form method="post" action="adduser.php">
