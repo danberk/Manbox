@@ -1,46 +1,35 @@
-<div class="navbar">
-  <div id="navcontainer">
-<a href="index.php"><img style="logo" src="images/manbox_logo.png"></a>
+<div id="navbar">
+	<div id="navcontainer">
 
-<?php
 
-	if (isset($_SESSION['email'])) {
-    	echo 'Account'; ?>
-    }
+<table width="1000" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="344">
+        
+        <a href="index.php"><img style="logo" src="images/manbox_logo.png"></a>
+        
+        </td>
+        
+        <td width="656">
+			<?php
+
+			if (isset($_SESSION['email'])) {
+    			echo 'Account'; 
+    		}
   	
-    else {
-	<!-- Sign In Dropdown -->
-	<div id="topnav" class="topnav" style="float:right"> 
-  
-	Have an account? <a href="login" class="signin"><span>Sign in</span></a> </div>
-	<fieldset id="signin_menu">
-		<form method="post" id="signin" action="login.php">
-		<label for="email">E-mail</label>
-		<input id="email" name="email" value="" title="email" tabindex="4" type="text">
-		</p>
-		<p>
-		<label for="password">Password</label>
-		<input id="password" name="password" value="" title="password" tabindex="5" type="password">
-		</p>
-		<p class="remember">
-		<input id="signin_submit" name="signin_submit" value="Sign in" tabindex="6" type="submit">
-		<input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
-        <label for="remember">Remember me</label>
-		</p>
-		<p class="forgot"> <a href="#" id="resend_password_link">Forgot your password?</a> </p>
-		<p class="forgot-username"> <A id=forgot_username_link 
-        title="If you remember your password, try logging in with your email" 
-        href="#">Forgot your username?</A> </p>
-		</form>
-	</fieldset>
-</div>
-
-	<?php
-    	echo '</p>';
-  	}
-
-?>
-
-</div>
-
+    		else {
+				echo "<ul class='navlinks'>
+        			<li><a href='#'><h2>SIGN UP</h2></a></li>
+					<li><a href='#'>HOW IT WORKS</a></li>
+					<li><a href='#'>LOG IN</a></li>
+        		</ul>";
+			} ?>
+            </td>
+            
+            </tr>
+            
+            </table>
+	</div>
+</div> 
+<!--<div id="navstrip"></div>-->
 

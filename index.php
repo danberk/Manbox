@@ -15,9 +15,6 @@
 
 <div id="container">
 	<?php
-	require_once('usersubmissionform.php');
+	require_once('indexcontent.php');
 	?>
 </div>
-<?php
-	require_once('footer.php');
-?>
